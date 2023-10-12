@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Введення цін та кількостей зошитів і ручок
+        Console.Write("Введіть ціну одного зошита: ");
+        double x = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Введіть ціну однієї ручки: ");
+        double y = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Введіть кількість зошитів: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Введіть кількість ручок: ");
+        int m = Convert.ToInt32(Console.ReadLine());
+
+        // Обчислення загальної суми
+        double totalCost = (x * n) + (y * m);
+
+        // Виведення результату
+        Console.WriteLine($"Загальна сума покупки: {totalCost} гривень");
+    }
+}
